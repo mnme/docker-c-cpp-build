@@ -1,2 +1,2 @@
 FROM alpine
-RUN apk add --no-cache gcc g++ cmake make
+RUN apk add --no-cache gcc g++ cmake make linux-headers
