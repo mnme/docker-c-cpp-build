@@ -1,2 +1,3 @@
-FROM alpine
-RUN apk add --no-cache gcc g++ cmake make git linux-headers pkgconfig
+FROM debian:testing-slim
+COPY install-deps.sh .
+RUN ./install-deps.sh
